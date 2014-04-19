@@ -2,9 +2,13 @@ package com.mtk.test;
 
 import java.util.Locale;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.parse.Parse;
 import com.parse.ParseAnalytics;
 import com.parse.ParseInstallation;
+import com.parse.ParsePush;
 import com.parse.PushService;
 
 import android.app.Activity;
@@ -50,8 +54,22 @@ public class MainActivity extends Activity {
 
 		Parse.initialize(this, "x4QP1WtDJk2PdXeElEyKJPZq6hvYYfvLFC5pO0pc", "kvJoElNTjn76BRdpxAD6RB29aEasGlNcaeYfBNn2");
 		
-		PushService.setDefaultPushCallback(this, ParsePNReceive.class);
-		ParseInstallation.getCurrentInstallation().saveInBackground();
+		PushService.subscribe(this, "updates", ParsePNReceive.class);
+		
+		JSONObject data=null;
+		try {
+			data = new JSONObject("{\"action\": \"com.mtk.test.UPDATE_STATUS\", \"name\": \"Tareque\", \"newsItem\": \"getting started with parse..\"}");
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+        ParsePush push = new ParsePush();
+        push.setChannel("updates");
+        push.setData(data);
+        push.sendInBackground();
+
+//		PushService.setDefaultPushCallback(this, ParsePNReceive.class);
+//		ParseInstallation.getCurrentInstallation().saveInBackground();
 		setContentView(R.layout.activity_main);
 
 		// Create the adapter that will return a fragment for each of the three
