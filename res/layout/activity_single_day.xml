@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mtk.test.SingleDay"
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical" >
+  
+
+		<TextView
+			android:id="@+id/selectedDate" 
+      	  	android:layout_width="match_parent"
+       	 	android:layout_height="25dp"
+       	 	android:gravity="center_horizontal"
+       	 	android:textColor="#006600"
+        	android:textSize="18sp"
+			/>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/row1col1"
+                        android:padding="4dp"
+                        android:text="@string/lec1"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row1col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec1_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/rol2col1"
+                        android:padding="4dp"
+                        android:text="@string/lec2"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row2col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec2_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/rol3col1"
+                        android:padding="4dp"
+                        android:text="@string/lec3"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row3col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec3_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/rol4col1"
+                        android:padding="4dp"
+                        android:text="@string/lec4"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row4col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec4_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/rol5col1"
+                        android:padding="4dp"
+                        android:text="@string/lec5"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row5col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec5_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/rol6col1"
+                        android:padding="4dp"
+                        android:text="@string/lec6"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row6col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec6_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/rol7col1"
+                        android:padding="4dp"
+                        android:text="@string/lec7"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row7col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec7_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/rol8col1"
+                        android:padding="4dp"
+                        android:text="@string/lec8"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/row8col2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:text="@string/lec8_contents"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+</LinearLayout>
+    

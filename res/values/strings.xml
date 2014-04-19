@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My First App</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="button_disp_call">Display Cal</string>
+    <string name="title_activity_disp_cal">Display Cal</string>
+    <string name="static_CalendarView">Static CalendarView</string>
+    <string name="title_section1">section1</string>
+    <string name="title_section2">section2</string>
+    <string name="title_section3">section3</string>
+    <string name="section_label">section_label</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_single_day">SingleDay</string>
+
+    <!-- lec timings -->
+    <string name="lec1">10:30\n11:30</string>
+    <string name="lec2">11:30\n12:30</string>
+    <string name="lec3">12:30\n13:30</string>
+    <string name="lec4">13:30\n14:30</string>
+    <string name="lec5">14:30\n15:30</string>
+    <string name="lec6">15:30\n16:30</string>
+    <string name="lec7">16:30\n17:30</string>
+    <string name="lec8">17:30\n18:30</string>
+    <string name="lec1_contents">row1col2\n</string>
+    <string name="lec2_contents">row2col2\n</string>
+    <string name="lec3_contents">row3col2\n</string>
+    <string name="lec4_contents">row4col2\n</string>
+    <string name="lec5_contents">row5col2\n</string>
+    <string name="lec6_contents">row6col2\n</string>
+    <string name="lec7_contents">row7col2\n</string>
+    <string name="lec8_contents">row8col2\n</string>
+    <string name="title_activity_parse_pnreceive">ParsePNReceive</string>
+
+</resources>
