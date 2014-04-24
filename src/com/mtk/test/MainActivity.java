@@ -28,6 +28,7 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	 public final static String EXTRA_MESSAGE = "com.mtk.test.MESSAGE-tarequekhan";
+	 static boolean done = false; 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
 	 * fragments for each of the sections. We use a {@link FragmentPagerAdapter}
@@ -52,21 +53,7 @@ public class MainActivity extends Activity {
 		testObject.saveInBackground();
 		*/
 
-		Parse.initialize(this, "x4QP1WtDJk2PdXeElEyKJPZq6hvYYfvLFC5pO0pc", "kvJoElNTjn76BRdpxAD6RB29aEasGlNcaeYfBNn2");
-		
-		PushService.subscribe(this, "updates", ParsePNReceive.class);
-		
-		JSONObject data=null;
-		try {
-			data = new JSONObject("{\"action\": \"com.mtk.test.UPDATE_STATUS\", \"name\": \"Tareque\", \"newsItem\": \"getting started with parse..\"}");
-		} catch (JSONException e) {
-			e.printStackTrace();
-		}
-
-        ParsePush push = new ParsePush();
-        push.setChannel("updates");
-        push.setData(data);
-        push.sendInBackground();
+		staticInitialze();
 
 //		PushService.setDefaultPushCallback(this, ParsePNReceive.class);
 //		ParseInstallation.getCurrentInstallation().saveInBackground();
@@ -80,6 +67,27 @@ public class MainActivity extends Activity {
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 
+	}
+
+	private void staticInitialze() {
+		// TODO Auto-generated method stub
+		if(!done){
+			Parse.initialize(this, "x4QP1WtDJk2PdXeElEyKJPZq6hvYYfvLFC5pO0pc", "kvJoElNTjn76BRdpxAD6RB29aEasGlNcaeYfBNn2");
+		
+			PushService.subscribe(this, "updates", DisplayMessageActivity.class);
+			JSONObject data=null;
+			try {
+				data = new JSONObject("{\"action\": \"com.mtk.test.UPDATE_STATUS\", \"name\": \"Tareque\", \"newsItem\": \"getting started with parse..\"}");
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+	/*
+	        ParsePush push = new ParsePush();
+	        push.setChannel("updates");
+	        push.setData(data);
+	        push.sendInBackground();*/
+	        done=true;
+		}
 	}
 
 	@Override

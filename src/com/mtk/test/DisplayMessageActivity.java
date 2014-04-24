@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class DisplayMessageActivity extends Activity {
-
+	static String VAR = "initialize";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,7 +22,7 @@ public class DisplayMessageActivity extends Activity {
 	    // Create the text view
 	    TextView textView = new TextView(this);
 	    textView.setTextSize(40);
-	    textView.setText(message);
+	    textView.setText(message + ": "+ VAR);
 
 	    // Set the text view as the activity layout
 	    setContentView(textView);

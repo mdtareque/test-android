@@ -30,15 +30,16 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name="com.mtk.test.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
             android:name="com.mtk.test.DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
@@ -54,6 +55,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mtk.test.MainActivity" />
         </activity>
+        
         <activity
             android:name="com.mtk.test.SingleDay"
             android:label="@string/title_activity_single_day"
@@ -64,6 +66,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
         <activity
             android:name="com.mtk.test.ParsePNReceive"
             android:label="@string/title_activity_parse_pnreceive" >
@@ -94,7 +97,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-<!--       IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+				<!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
                 <category android:name="com.mtk.test" />
             </intent-filter>
         </receiver>
